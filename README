@@ -1,0 +1,211 @@
+libgsf
+-------------------------------------------
+The project aims to provide an efficient extensible i/o abstraction 
+for dealing with different structured file formats.
+
+Runtime requirements:
+  cygwin-1.5.20-1 (20060604)
+  ORBit2-2.12.5-1
+  glib2-2.10.2-1
+  gnome-vfs2-2.14.1-1
+  libbonobo2-2.14.0-1
+  libbz2_1-1.0.3-1
+  libxml2-2.6.24-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1 (20060604)
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gtk-doc-1.5-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+  w32api-3.7-1
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/libgsf/
+
+-------------------------------------------
+
+Build instructions:
+  unpack libgsf-1.14.1-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./libgsf-1.14.1-X.cygport all
+
+This will create:
+  /usr/src/libgsf-1.14.1-X-src.tar.bz2
+  /usr/src/libgsf-1.14.1-X.tar.bz2
+  /usr/src/libgsf114-1.14.1-X.tar.bz2
+  /usr/src/libgsf1-devel-1.14.1-X.tar.bz2
+  /usr/src/libgsf-doc-1.14.1-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /etc/gconf/schemas/gsf-office-thumbnailer.schemas
+  /etc/postinstall/libgsf.sh
+  /etc/preremove/libgsf.sh
+  /usr/bin/gsf-office-thumbnailer.exe
+  /usr/share/doc/Cygwin/libgsf-1.14.1.README
+  /usr/share/doc/libgsf-1.14.1/AUTHORS
+  /usr/share/doc/libgsf-1.14.1/BUGS
+  /usr/share/doc/libgsf-1.14.1/COPYING
+  /usr/share/doc/libgsf-1.14.1/COPYING.LIB
+  /usr/share/doc/libgsf-1.14.1/ChangeLog
+  /usr/share/doc/libgsf-1.14.1/HACKING
+  /usr/share/doc/libgsf-1.14.1/INSTALL
+  /usr/share/doc/libgsf-1.14.1/NEWS
+  /usr/share/doc/libgsf-1.14.1/README
+  /usr/share/doc/libgsf-1.14.1/TODO
+  /usr/share/locale/es/LC_MESSAGES/libgsf.mo
+  /usr/share/locale/sv/LC_MESSAGES/libgsf.mo
+  /usr/share/man/man1/gsf-office-thumbnailer.1.gz
+
+Files included in the runtime library package:
+
+  /usr/bin/cyggsf-1-114.dll
+  /usr/bin/cyggsf-gnome-1-114.dll
+  /usr/bin/cyggsf-win32-1-114.dll
+
+Files included in the devel package:
+
+  /usr/include/libgsf-1/gsf-gnome/gsf-input-bonobo.h
+  /usr/include/libgsf-1/gsf-gnome/gsf-input-gnomevfs.h
+  /usr/include/libgsf-1/gsf-gnome/gsf-output-bonobo.h
+  /usr/include/libgsf-1/gsf-gnome/gsf-output-gnomevfs.h
+  /usr/include/libgsf-1/gsf-gnome/gsf-shared-bonobo-stream.h
+  /usr/include/libgsf-1/gsf-win32/gsf-input-win32.h
+  /usr/include/libgsf-1/gsf-win32/gsf-output-win32.h
+  /usr/include/libgsf-1/gsf/gsf-blob.h
+  /usr/include/libgsf-1/gsf/gsf-clip-data.h
+  /usr/include/libgsf-1/gsf/gsf-doc-meta-data.h
+  /usr/include/libgsf-1/gsf/gsf-docprop-vector.h
+  /usr/include/libgsf-1/gsf/gsf-impl-utils.h
+  /usr/include/libgsf-1/gsf/gsf-infile-impl.h
+  /usr/include/libgsf-1/gsf/gsf-infile-msole.h
+  /usr/include/libgsf-1/gsf/gsf-infile-msvba.h
+  /usr/include/libgsf-1/gsf/gsf-infile-stdio.h
+  /usr/include/libgsf-1/gsf/gsf-infile-zip.h
+  /usr/include/libgsf-1/gsf/gsf-infile.h
+  /usr/include/libgsf-1/gsf/gsf-input-bzip.h
+  /usr/include/libgsf-1/gsf/gsf-input-gzip.h
+  /usr/include/libgsf-1/gsf/gsf-input-impl.h
+  /usr/include/libgsf-1/gsf/gsf-input-iochannel.h
+  /usr/include/libgsf-1/gsf/gsf-input-memory.h
+  /usr/include/libgsf-1/gsf/gsf-input-proxy.h
+  /usr/include/libgsf-1/gsf/gsf-input-stdio.h
+  /usr/include/libgsf-1/gsf/gsf-input-textline.h
+  /usr/include/libgsf-1/gsf/gsf-input.h
+  /usr/include/libgsf-1/gsf/gsf-libxml.h
+  /usr/include/libgsf-1/gsf/gsf-meta-names.h
+  /usr/include/libgsf-1/gsf/gsf-msole-utils.h
+  /usr/include/libgsf-1/gsf/gsf-opendoc-utils.h
+  /usr/include/libgsf-1/gsf/gsf-outfile-impl.h
+  /usr/include/libgsf-1/gsf/gsf-outfile-msole.h
+  /usr/include/libgsf-1/gsf/gsf-outfile-stdio.h
+  /usr/include/libgsf-1/gsf/gsf-outfile-zip.h
+  /usr/include/libgsf-1/gsf/gsf-outfile.h
+  /usr/include/libgsf-1/gsf/gsf-output-bzip.h
+  /usr/include/libgsf-1/gsf/gsf-output-csv.h
+  /usr/include/libgsf-1/gsf/gsf-output-gzip.h
+  /usr/include/libgsf-1/gsf/gsf-output-iconv.h
+  /usr/include/libgsf-1/gsf/gsf-output-impl.h
+  /usr/include/libgsf-1/gsf/gsf-output-iochannel.h
+  /usr/include/libgsf-1/gsf/gsf-output-memory.h
+  /usr/include/libgsf-1/gsf/gsf-output-stdio.h
+  /usr/include/libgsf-1/gsf/gsf-output.h
+  /usr/include/libgsf-1/gsf/gsf-structured-blob.h
+  /usr/include/libgsf-1/gsf/gsf-timestamp.h
+  /usr/include/libgsf-1/gsf/gsf-utils.h
+  /usr/include/libgsf-1/gsf/gsf.h
+  /usr/lib/libgsf-1.dll.a
+  /usr/lib/libgsf-1.la
+  /usr/lib/libgsf-gnome-1.dll.a
+  /usr/lib/libgsf-gnome-1.la
+  /usr/lib/libgsf-win32-1.dll.a
+  /usr/lib/libgsf-win32-1.la
+  /usr/lib/pkgconfig/libgsf-1.pc
+  /usr/lib/pkgconfig/libgsf-gnome-1.pc
+  /usr/lib/pkgconfig/libgsf-win32-1.pc
+
+Files included in the doc package:
+
+  /usr/share/gtk-doc/html/gsf/GsfBlob.html
+  /usr/share/gtk-doc/html/gsf/GsfClipData.html
+  /usr/share/gtk-doc/html/gsf/api.html
+  /usr/share/gtk-doc/html/gsf/dependencies.html
+  /usr/share/gtk-doc/html/gsf/gsf-Bononbo.html
+  /usr/share/gtk-doc/html/gsf/gsf-Compression.html
+  /usr/share/gtk-doc/html/gsf/gsf-GIOChannel.html
+  /usr/share/gtk-doc/html/gsf/gsf-GnomeVFS.html
+  /usr/share/gtk-doc/html/gsf/gsf-Infile-reading-structed-files.html
+  /usr/share/gtk-doc/html/gsf/gsf-Input-from-unstructured-files.html
+  /usr/share/gtk-doc/html/gsf/gsf-MS-OLE2.html
+  /usr/share/gtk-doc/html/gsf/gsf-Outfile-writing-structed-files.html
+  /usr/share/gtk-doc/html/gsf/gsf-Output-to-unstructured-files.html
+  /usr/share/gtk-doc/html/gsf/gsf-Reading-and-Writing-from-local-files-and-directories.html
+  /usr/share/gtk-doc/html/gsf/gsf-Structured-Blobs.html
+  /usr/share/gtk-doc/html/gsf/gsf-Text.html
+  /usr/share/gtk-doc/html/gsf/gsf-XML-and-libxml.html
+  /usr/share/gtk-doc/html/gsf/gsf-Zip.html
+  /usr/share/gtk-doc/html/gsf/gsf-gsf-opendoc-utils.html
+  /usr/share/gtk-doc/html/gsf/gsf-memory.html
+  /usr/share/gtk-doc/html/gsf/gsf-metadata.html
+  /usr/share/gtk-doc/html/gsf/gsf-users.html
+  /usr/share/gtk-doc/html/gsf/gsf-utils.html
+  /usr/share/gtk-doc/html/gsf/gsf.devhelp
+  /usr/share/gtk-doc/html/gsf/gsf.devhelp2
+  /usr/share/gtk-doc/html/gsf/history.html
+  /usr/share/gtk-doc/html/gsf/home.png
+  /usr/share/gtk-doc/html/gsf/index.html
+  /usr/share/gtk-doc/html/gsf/index.sgml
+  /usr/share/gtk-doc/html/gsf/intro.html
+  /usr/share/gtk-doc/html/gsf/io.html
+  /usr/share/gtk-doc/html/gsf/ix01.html
+  /usr/share/gtk-doc/html/gsf/left.png
+  /usr/share/gtk-doc/html/gsf/misc.html
+  /usr/share/gtk-doc/html/gsf/parsers.html
+  /usr/share/gtk-doc/html/gsf/right.png
+  /usr/share/gtk-doc/html/gsf/sources.html
+  /usr/share/gtk-doc/html/gsf/style.css
+  /usr/share/gtk-doc/html/gsf/up.png
+
+--------------------
+
+Port Notes:
+
+----- version 1.14.1-1 -----
+Version bump.
+
+----- version 1.14.0-1 -----
+Version and ABI bump.
+
+----- version 1.13.3-1 -----
+Version bump.
+Reorganized into lib, devel, and doc packages.
+
+----- version 1.13.2-1 -----
+Version and ABI bump.
+
+----- version 1.12.3-1 -----
+Version bump.
+Docs, libgsf-gnome and libgsf-win32 are now packaged separately.
+
+----- version 1.12.2-1 -----
+New upstream version; GNOME support included.
+
+----- version 1.10.1-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

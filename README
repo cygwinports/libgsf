@@ -4,28 +4,34 @@ The project aims to provide an efficient extensible i/o abstraction
 for dealing with different structured file formats.
 
 Runtime requirements:
-  cygwin-1.5.20-1 (20060604)
-  ORBit2-2.12.5-1
+  cygwin-1.5.21-2
+  ORBit2-2.14.2-1
   glib2-2.10.2-1
-  gnome-vfs2-2.14.1-1
+  gnome-vfs2-2.14.2-1
   libbonobo2-2.14.0-1
   libbz2_1-1.0.3-1
-  libxml2-2.6.24-1
+  libxml2-2.6.26-1
+(pygsf)
+  pybonobo2-2.12.2-1
+  pygnomevfs2-2.12.3-1
+  pygobject2-2.10.1-1
+  pyorbit-2.14.1-1
+  python-2.4.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1 (20060604)
-  autoconf2.5-2.59-2
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.1-1
+  binutils-20060817-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   gtk-doc-1.5-1
   libtool1.5-1.5.22-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
   w32api-3.7-1
 
 Canonical download:
@@ -34,50 +40,52 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgsf-1.14.1-X-src.tar.bz2
+  unpack libgsf-1.14.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgsf-1.14.1-X.cygport all
+  cygport ./libgsf-1.14.2-X.cygport all
 
 This will create:
-  /usr/src/libgsf-1.14.1-X-src.tar.bz2
-  /usr/src/libgsf-1.14.1-X.tar.bz2
-  /usr/src/libgsf114-1.14.1-X.tar.bz2
-  /usr/src/libgsf1-devel-1.14.1-X.tar.bz2
-  /usr/src/libgsf-doc-1.14.1-X.tar.bz2
+  /usr/src/libgsf-1.14.2-X-src.tar.bz2
+  /usr/src/libgsf-1.14.2-X.tar.bz2
+  /usr/src/libgsf114-1.14.2-X.tar.bz2
+  /usr/src/libgsf1-devel-1.14.2-X.tar.bz2
+  /usr/src/libgsf-doc-1.14.2-X.tar.bz2
+  /usr/src/pygsf-1.14.2-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the main package:
+Files included in the binary packages:
 
+(libgsf)
   /etc/gconf/schemas/gsf-office-thumbnailer.schemas
   /etc/postinstall/libgsf.sh
   /etc/preremove/libgsf.sh
   /usr/bin/gsf-office-thumbnailer.exe
-  /usr/share/doc/Cygwin/libgsf-1.14.1.README
-  /usr/share/doc/libgsf-1.14.1/AUTHORS
-  /usr/share/doc/libgsf-1.14.1/BUGS
-  /usr/share/doc/libgsf-1.14.1/COPYING
-  /usr/share/doc/libgsf-1.14.1/COPYING.LIB
-  /usr/share/doc/libgsf-1.14.1/ChangeLog
-  /usr/share/doc/libgsf-1.14.1/HACKING
-  /usr/share/doc/libgsf-1.14.1/INSTALL
-  /usr/share/doc/libgsf-1.14.1/NEWS
-  /usr/share/doc/libgsf-1.14.1/README
-  /usr/share/doc/libgsf-1.14.1/TODO
+  /usr/bin/gsf-vba-dump.exe
+  /usr/bin/gsf.exe
+  /usr/share/doc/Cygwin/libgsf-1.14.2.README
+  /usr/share/doc/libgsf-1.14.2/AUTHORS
+  /usr/share/doc/libgsf-1.14.2/BUGS
+  /usr/share/doc/libgsf-1.14.2/COPYING
+  /usr/share/doc/libgsf-1.14.2/COPYING.LIB
+  /usr/share/doc/libgsf-1.14.2/ChangeLog
+  /usr/share/doc/libgsf-1.14.2/HACKING
+  /usr/share/doc/libgsf-1.14.2/INSTALL
+  /usr/share/doc/libgsf-1.14.2/NEWS
+  /usr/share/doc/libgsf-1.14.2/README
+  /usr/share/doc/libgsf-1.14.2/TODO
   /usr/share/locale/es/LC_MESSAGES/libgsf.mo
   /usr/share/locale/sv/LC_MESSAGES/libgsf.mo
   /usr/share/man/man1/gsf-office-thumbnailer.1.gz
 
-Files included in the runtime library package:
-
+(libgsf114)
   /usr/bin/cyggsf-1-114.dll
   /usr/bin/cyggsf-gnome-1-114.dll
   /usr/bin/cyggsf-win32-1-114.dll
 
-Files included in the devel package:
-
+(libgsf1-devel)
   /usr/include/libgsf-1/gsf-gnome/gsf-input-bonobo.h
   /usr/include/libgsf-1/gsf-gnome/gsf-input-gnomevfs.h
   /usr/include/libgsf-1/gsf-gnome/gsf-output-bonobo.h
@@ -137,8 +145,7 @@ Files included in the devel package:
   /usr/lib/pkgconfig/libgsf-gnome-1.pc
   /usr/lib/pkgconfig/libgsf-win32-1.pc
 
-Files included in the doc package:
-
+(libgsf-doc)
   /usr/share/gtk-doc/html/gsf/GsfBlob.html
   /usr/share/gtk-doc/html/gsf/GsfClipData.html
   /usr/share/gtk-doc/html/gsf/api.html
@@ -179,9 +186,21 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/gsf/style.css
   /usr/share/gtk-doc/html/gsf/up.png
 
+(pygsf)
+  /usr/lib/python2.4/site-packages/gsf/__init__.py
+  /usr/lib/python2.4/site-packages/gsf/__init__.pyc
+  /usr/lib/python2.4/site-packages/gsf/__init__.pyo
+  /usr/lib/python2.4/site-packages/gsf/_gsfmodule.dll
+  /usr/lib/python2.4/site-packages/gsf/_gsfmodule.la
+  /usr/lib/python2.4/site-packages/gsf/gnomemodule.dll
+  /usr/lib/python2.4/site-packages/gsf/gnomemodule.la
+
 --------------------
 
 Port Notes:
+
+----- version 1.14.2-1 -----
+Version bump.  Python bindings now included.
 
 ----- version 1.14.1-1 -----
 Version bump.

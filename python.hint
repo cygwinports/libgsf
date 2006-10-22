@@ -1,0 +1,6 @@
+category: Gnome Python
+requires: cygwin libgsf114 pygobject pybonobo pygnomevfs pyorbit
+external-source: libgsf
+sdesc: "Gnome Structured File Library (Python bindings)"
+ldesc: "The project aims to provide an efficient extensible i/o 
+abstraction for dealing with different structured file formats."

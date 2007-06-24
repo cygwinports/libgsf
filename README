@@ -6,8 +6,8 @@ for dealing with different structured file formats.
 Runtime requirements:
   cygwin-1.5.24-2
   ORBit2-2.14.7-1
-  glib2-2.10.12-1
-  gnome-vfs2-2.16.2-1
+  glib2-2.10.12-2
+  gnome-vfs2-2.16.3-1
   libbonobo2-2.16.0-1
   libbz2_1-1.0.3-2
   libxml2-2.6.28-2
@@ -22,7 +22,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
+  cygport-0.3.1-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   gtk-doc-1.8-1
@@ -41,18 +41,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgsf-1.14.3-X-src.tar.bz2
+  unpack libgsf-1.14.4-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgsf-1.14.3-X.cygport all
+  cygport ./libgsf-1.14.4-X.cygport all
 
 This will create:
-  /usr/src/libgsf-1.14.3-X-src.tar.bz2
-  /usr/src/libgsf-1.14.3-X.tar.bz2
-  /usr/src/libgsf114-1.14.3-X.tar.bz2
-  /usr/src/libgsf1-devel-1.14.3-X.tar.bz2
-  /usr/src/python-gsf-1.14.3-X.tar.bz2
+  /usr/src/libgsf-1.14.4-X-src.tar.bz2
+  /usr/src/libgsf-1.14.4-X.tar.bz2
+  /usr/src/libgsf114-1.14.4-X.tar.bz2
+  /usr/src/libgsf1-devel-1.14.4-X.tar.bz2
+  /usr/src/python-gsf-1.14.4-X.tar.bz2
 
 -------------------------------------------
 
@@ -65,17 +65,17 @@ Files included in the binary packages:
   /usr/bin/gsf-office-thumbnailer.exe
   /usr/bin/gsf-vba-dump.exe
   /usr/bin/gsf.exe
-  /usr/share/doc/Cygwin/libgsf-1.14.3.README
-  /usr/share/doc/libgsf-1.14.3/AUTHORS
-  /usr/share/doc/libgsf-1.14.3/BUGS
-  /usr/share/doc/libgsf-1.14.3/COPYING
-  /usr/share/doc/libgsf-1.14.3/COPYING.LIB
-  /usr/share/doc/libgsf-1.14.3/ChangeLog
-  /usr/share/doc/libgsf-1.14.3/HACKING
-  /usr/share/doc/libgsf-1.14.3/INSTALL
-  /usr/share/doc/libgsf-1.14.3/NEWS
-  /usr/share/doc/libgsf-1.14.3/README
-  /usr/share/doc/libgsf-1.14.3/TODO
+  /usr/share/doc/Cygwin/libgsf-1.14.4.README
+  /usr/share/doc/libgsf-1.14.4/AUTHORS
+  /usr/share/doc/libgsf-1.14.4/BUGS
+  /usr/share/doc/libgsf-1.14.4/COPYING
+  /usr/share/doc/libgsf-1.14.4/COPYING.LIB
+  /usr/share/doc/libgsf-1.14.4/ChangeLog
+  /usr/share/doc/libgsf-1.14.4/HACKING
+  /usr/share/doc/libgsf-1.14.4/INSTALL
+  /usr/share/doc/libgsf-1.14.4/NEWS
+  /usr/share/doc/libgsf-1.14.4/README
+  /usr/share/doc/libgsf-1.14.4/TODO
   /usr/share/locale/es/LC_MESSAGES/libgsf.mo
   /usr/share/locale/sv/LC_MESSAGES/libgsf.mo
   /usr/share/man/man1/gsf-office-thumbnailer.1.gz
@@ -196,6 +196,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 1.14.4-1 -----
+Version bump.
 
 ----- version 1.14.3-1 -----
 Version bump.  Python bindings built for python-2.5.

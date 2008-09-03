@@ -1,11 +1,3 @@
---- origsrc/libgsf-1.14.8/Makefile.am	2007-07-27 07:14:48.000000000 -0500
-+++ src/libgsf-1.14.8/Makefile.am	2008-03-08 22:57:10.250000000 -0600
-@@ -1,4 +1,4 @@
--ACLOCAL_AMFLAGS = -I m4 $(ACLOCAL_FLAGS)
-+ACLOCAL_AMFLAGS = -I m4
- 
- pkgconfigdir = $(libdir)/pkgconfig
- pkgconfig_DATA = libgsf-1.pc
 --- origsrc/libgsf-1.14.8/configure.in	2007-09-07 20:18:55.000000000 -0500
 +++ src/libgsf-1.14.8/configure.in	2008-03-08 22:57:10.250000000 -0600
 @@ -296,6 +296,12 @@
@@ -29,16 +21,6 @@
  
  dnl ***********************************************************************************
  
---- origsrc/libgsf-1.14.8/doc/gsf.types	2008-03-05 20:29:10.000000000 -0600
-+++ src/libgsf-1.14.8/doc/gsf.types	2008-03-08 22:57:10.265625000 -0600
-@@ -75,7 +75,6 @@
- gsf_output_iochannel_get_type
- gsf_output_memory_get_type
- gsf_output_stdio_get_type
--gsf_shared_memory_get_type
- gsf_structured_blob_get_type
- gsf_timestamp_get_type
- gsf_xml_out_get_type
 --- origsrc/libgsf-1.14.8/m4/python.m4	2007-05-29 20:20:26.000000000 -0500
 +++ src/libgsf-1.14.8/m4/python.m4	2008-03-08 22:57:10.265625000 -0600
 @@ -46,10 +46,12 @@

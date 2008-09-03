@@ -2,6 +2,9 @@ inherit python gnome2
 
 DESCRIPTION="GNOME Structured File library"
 
+PATCH_URI="1.14.8-python.patch
+           1.14.9-gtk-doc.patch"
+
 PKG_NAMES="${PN} ${PN}${PV_MAJ_MIN/\./} ${PN}${PV_MAJ}-devel python-gsf"
 PKG_HINTS="setup runtime devel python"
 PKG_CONTENTS[0]='etc/ usr/bin/*.exe usr/share/doc usr/share/locale usr/share/man'

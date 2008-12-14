@@ -5,33 +5,33 @@ for dealing with different structured file formats.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  ORBit2-2.14.13-1
-  glib2-2.16.3-1
-  gnome-vfs2-2.22.0-1
-  libbonobo2-2.22.0-1
+  libbonobo2_0-2.24.0-1
   libbz2_1-1.0.5-2
-  libintl8-0.15-1
-  libxml2-2.6.32-2
+  libglib2.0_0-2.18.3-1
+  libgnomevfs2_0-2.24.0-1
+  libintl8-0.17-2
+  libORBit2_0-2.14.16-1
+  libxml2-2.7.2-1
   zlib-1.2.3-2
 (python-gsf)
-  python-2.5.2-3
-  python-gobject2-2.14.2-1
-  python-orbit-2.14.3-1
+  python-2.5.2-4
+  python-gobject2-2.15.4-1
+  python-orbit-2.24.0-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10-1
-  binutils-20060817-1
-  cygport-0.3.8-1
+  autoconf2.5-2.63-1
+  automake1.10-1.10.1-2
+  binutils-20080624-2
+  cygport-0.4.3-1
   gawk-3.1.6-1
   gcc-core-3.4.4-3
-  gtk-doc-1.9-1
-  libtool1.5-1.5.23a-2
+  gtk-doc-1.11-1
+  libtool-2.2.6a-1
   make-3.81-1
-  pkg-config-0.21-1
+  pkg-config-0.23a-2
   sed-4.1.5-2
-  w32api-3.10-1
+  w32api-3.12-1
 
 Canonical download:
   http://www.gnome.org/projects/gnumeric/
@@ -42,18 +42,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgsf-1.14.9-X-src.tar.bz2
+  unpack libgsf-1.14.10-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgsf-1.14.9-X.cygport all
+  cygport ./libgsf-1.14.10-X.cygport all
 
 This will create:
-  /usr/src/libgsf-1.14.9-X-src.tar.bz2
-  /usr/src/libgsf-1.14.9-X.tar.bz2
-  /usr/src/libgsf114-1.14.9-X.tar.bz2
-  /usr/src/libgsf1-devel-1.14.9-X.tar.bz2
-  /usr/src/python-gsf-1.14.9-X.tar.bz2
+  /usr/src/libgsf-1.14.10-X-src.tar.bz2
+  /usr/src/libgsf-1.14.10-X.tar.bz2
+  /usr/src/libgsf1_114-1.14.10-X.tar.bz2
+  /usr/src/libgsf1-devel-1.14.10-X.tar.bz2
+  /usr/src/python-gsf-1.14.10-X.tar.bz2
 
 -------------------------------------------
 
@@ -66,21 +66,27 @@ Files included in the binary packages:
   /usr/bin/gsf-office-thumbnailer.exe
   /usr/bin/gsf-vba-dump.exe
   /usr/bin/gsf.exe
-  /usr/share/doc/libgsf-1.14.9/AUTHORS
-  /usr/share/doc/libgsf-1.14.9/BUGS
-  /usr/share/doc/libgsf-1.14.9/COPYING
-  /usr/share/doc/libgsf-1.14.9/COPYING.LIB
-  /usr/share/doc/libgsf-1.14.9/ChangeLog
-  /usr/share/doc/libgsf-1.14.9/HACKING
-  /usr/share/doc/libgsf-1.14.9/INSTALL
-  /usr/share/doc/libgsf-1.14.9/NEWS
-  /usr/share/doc/libgsf-1.14.9/README
-  /usr/share/doc/libgsf-1.14.9/TODO
+  /usr/share/doc/libgsf-1.14.10/AUTHORS
+  /usr/share/doc/libgsf-1.14.10/BUGS
+  /usr/share/doc/libgsf-1.14.10/COPYING
+  /usr/share/doc/libgsf-1.14.10/COPYING.LIB
+  /usr/share/doc/libgsf-1.14.10/ChangeLog
+  /usr/share/doc/libgsf-1.14.10/HACKING
+  /usr/share/doc/libgsf-1.14.10/INSTALL
+  /usr/share/doc/libgsf-1.14.10/NEWS
+  /usr/share/doc/libgsf-1.14.10/README
+  /usr/share/doc/libgsf-1.14.10/TODO
   /usr/share/locale/es/LC_MESSAGES/libgsf.mo
+  /usr/share/locale/nb/LC_MESSAGES/libgsf.mo
+  /usr/share/locale/oc/LC_MESSAGES/libgsf.mo
   /usr/share/locale/sv/LC_MESSAGES/libgsf.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/libgsf.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/libgsf.mo
   /usr/share/man/man1/gsf-office-thumbnailer.1.gz
+  /usr/share/man/man1/gsf-vba-dump.1.gz
+  /usr/share/man/man1/gsf.1.gz
 
-(libgsf114)
+(libgsf1_114)
   /usr/bin/cyggsf-1-114.dll
   /usr/bin/cyggsf-gnome-1-114.dll
   /usr/bin/cyggsf-win32-1-114.dll
@@ -196,6 +202,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 1.14.10-1 -----
+Version bump.
 
 ----- version 1.14.9-1 -----
 Version bump.

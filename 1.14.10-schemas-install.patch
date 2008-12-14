@@ -1,0 +1,12 @@
+--- origsrc/libgsf-1.14.10/thumbnailer/Makefile.am	2007-12-28 16:54:57.000000000 -0600
++++ src/libgsf-1.14.10/thumbnailer/Makefile.am	2008-12-14 04:08:10.181390700 -0600
+@@ -13,9 +13,7 @@
+ 
+ schemas = gsf-office-thumbnailer.schemas
+ schemadir = $(GCONF_SCHEMA_FILE_DIR)
+-if GCONF_SCHEMAS_INSTALL
+ schema_DATA = $(schemas)
+-endif
+ 
+ install-data-local:
+ if GCONF_SCHEMAS_INSTALL

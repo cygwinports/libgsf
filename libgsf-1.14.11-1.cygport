@@ -1,4 +1,4 @@
-inherit python gnome2
+inherit pygtk gnome2
 
 DESCRIPTION="GNOME Structured File library"
 

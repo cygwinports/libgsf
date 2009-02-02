@@ -7,15 +7,15 @@ Runtime requirements:
   cygwin-1.5.25-15
   libbonobo2_0-2.24.0-1
   libbz2_1-1.0.5-2
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.18.4-1
   libgnomevfs2_0-2.24.0-1
   libintl8-0.17-2
   libORBit2_0-2.14.16-1
   libxml2-2.7.2-1
   zlib-1.2.3-2
 (python-gsf)
-  python-2.5.2-4
-  python-gobject2-2.15.4-1
+  python-2.5.4-1
+  python-gobject2-2.16.0-1
   python-orbit-2.24.0-1
 
 Build requirements:
@@ -42,18 +42,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgsf-1.14.10-X-src.tar.bz2
+  unpack libgsf-1.14.11-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgsf-1.14.10-X.cygport all
+  cygport ./libgsf-1.14.11-X.cygport all
 
 This will create:
-  /usr/src/libgsf-1.14.10-X-src.tar.bz2
-  /usr/src/libgsf-1.14.10-X.tar.bz2
-  /usr/src/libgsf1_114-1.14.10-X.tar.bz2
-  /usr/src/libgsf1-devel-1.14.10-X.tar.bz2
-  /usr/src/python-gsf-1.14.10-X.tar.bz2
+  /usr/src/libgsf-1.14.11-X-src.tar.bz2
+  /usr/src/libgsf-1.14.11-X.tar.bz2
+  /usr/src/libgsf1_114-1.14.11-X.tar.bz2
+  /usr/src/libgsf1-devel-1.14.11-X.tar.bz2
+  /usr/src/python-gsf-1.14.11-X.tar.bz2
 
 -------------------------------------------
 
@@ -66,16 +66,16 @@ Files included in the binary packages:
   /usr/bin/gsf-office-thumbnailer.exe
   /usr/bin/gsf-vba-dump.exe
   /usr/bin/gsf.exe
-  /usr/share/doc/libgsf-1.14.10/AUTHORS
-  /usr/share/doc/libgsf-1.14.10/BUGS
-  /usr/share/doc/libgsf-1.14.10/COPYING
-  /usr/share/doc/libgsf-1.14.10/COPYING.LIB
-  /usr/share/doc/libgsf-1.14.10/ChangeLog
-  /usr/share/doc/libgsf-1.14.10/HACKING
-  /usr/share/doc/libgsf-1.14.10/INSTALL
-  /usr/share/doc/libgsf-1.14.10/NEWS
-  /usr/share/doc/libgsf-1.14.10/README
-  /usr/share/doc/libgsf-1.14.10/TODO
+  /usr/share/doc/libgsf-1.14.11/AUTHORS
+  /usr/share/doc/libgsf-1.14.11/BUGS
+  /usr/share/doc/libgsf-1.14.11/COPYING
+  /usr/share/doc/libgsf-1.14.11/COPYING.LIB
+  /usr/share/doc/libgsf-1.14.11/ChangeLog
+  /usr/share/doc/libgsf-1.14.11/HACKING
+  /usr/share/doc/libgsf-1.14.11/INSTALL
+  /usr/share/doc/libgsf-1.14.11/NEWS
+  /usr/share/doc/libgsf-1.14.11/README
+  /usr/share/doc/libgsf-1.14.11/TODO
   /usr/share/locale/es/LC_MESSAGES/libgsf.mo
   /usr/share/locale/nb/LC_MESSAGES/libgsf.mo
   /usr/share/locale/oc/LC_MESSAGES/libgsf.mo
@@ -202,6 +202,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 1.14.11-1 -----
+Version bump.
 
 ----- version 1.14.10-1 -----
 Version bump.

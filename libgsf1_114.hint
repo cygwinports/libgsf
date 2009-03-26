@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libbonobo2_0 libbz2_1 libglib2.0_0 libgnomevfs2_0 libintl8 libORBit2_0 libxml2 zlib
+requires: cygwin libbonobo2_0 libbz2_1 libgcc1 libglib2.0_0 libgnomevfs2_0 libintl8 libORBit2_0 libxml2 zlib0
 external-source: libgsf
 sdesc: "Gnome Structured File Library (runtime)"
 ldesc: "The project aims to provide an efficient extensible i/o 

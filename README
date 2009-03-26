@@ -4,34 +4,34 @@ The project aims to provide an efficient extensible i/o abstraction
 for dealing with different structured file formats.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libbonobo2_0-2.24.0-1
-  libbz2_1-1.0.5-2
-  libglib2.0_0-2.18.4-1
-  libgnomevfs2_0-2.24.0-1
-  libintl8-0.17-2
-  libORBit2_0-2.14.16-1
-  libxml2-2.7.2-1
-  zlib-1.2.3-2
+  cygwin-1.7.0-44
+  libbonobo2_0-2.24.1-1
+  libbz2_1-1.0.5-10
+  libgcc1-4.3.2-2
+  libglib2.0_0-2.20.0-1
+  libgnomevfs2_0-2.26.0-1
+  libintl8-0.17-10
+  libORBit2_0-2.14.17-1
+  libxml2-2.7.3-10
+  zlib0-1.2.3-10
 (python-gsf)
-  python-2.5.4-1
-  python-gobject2-2.16.0-1
-  python-orbit-2.24.0-1
+  python-2.5.4-10
+  python-gobject2-2.16.1-10
+  python-orbit-2.24.0-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gtk-doc-1.11-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gtk-doc-1.11-2
+  libtool-2.2.6a-2
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
-  w32api-3.12-1
 
 Canonical download:
   http://www.gnome.org/projects/gnumeric/
@@ -66,16 +66,15 @@ Files included in the binary packages:
   /usr/bin/gsf-office-thumbnailer.exe
   /usr/bin/gsf-vba-dump.exe
   /usr/bin/gsf.exe
-  /usr/share/doc/libgsf-1.14.11/AUTHORS
-  /usr/share/doc/libgsf-1.14.11/BUGS
-  /usr/share/doc/libgsf-1.14.11/COPYING
-  /usr/share/doc/libgsf-1.14.11/COPYING.LIB
-  /usr/share/doc/libgsf-1.14.11/ChangeLog
-  /usr/share/doc/libgsf-1.14.11/HACKING
-  /usr/share/doc/libgsf-1.14.11/INSTALL
-  /usr/share/doc/libgsf-1.14.11/NEWS
-  /usr/share/doc/libgsf-1.14.11/README
-  /usr/share/doc/libgsf-1.14.11/TODO
+  /usr/share/doc/libgsf/AUTHORS
+  /usr/share/doc/libgsf/BUGS
+  /usr/share/doc/libgsf/COPYING
+  /usr/share/doc/libgsf/COPYING.LIB
+  /usr/share/doc/libgsf/ChangeLog
+  /usr/share/doc/libgsf/HACKING
+  /usr/share/doc/libgsf/NEWS
+  /usr/share/doc/libgsf/README
+  /usr/share/doc/libgsf/TODO
   /usr/share/locale/es/LC_MESSAGES/libgsf.mo
   /usr/share/locale/nb/LC_MESSAGES/libgsf.mo
   /usr/share/locale/oc/LC_MESSAGES/libgsf.mo
@@ -203,55 +202,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 1.14.11-1 -----
-Version bump.
-
------ version 1.14.10-1 -----
-Version bump.
-
------ version 1.14.9-1 -----
-Version bump.
-
------ version 1.14.8-1 -----
-Version bump.
-
------ version 1.14.7-1 -----
-Version bump.
-
------ version 1.14.5-1 -----
-Version bump.
-
------ version 1.14.4-1 -----
-Version bump.
-
------ version 1.14.3-1 -----
-Version bump.  Python bindings built for python-2.5.
-
------ version 1.14.2-1 -----
-Version bump.  Python bindings now included.
-
------ version 1.14.1-1 -----
-Version bump.
-
------ version 1.14.0-1 -----
-Version and ABI bump.
-
------ version 1.13.3-1 -----
-Version bump.
-Reorganized into lib, devel, and doc packages.
-
------ version 1.13.2-1 -----
-Version and ABI bump.
-
------ version 1.12.3-1 -----
-Version bump.
-Docs, libgsf-gnome and libgsf-win32 are now packaged separately.
-
------ version 1.12.2-1 -----
-New upstream version; GNOME support included.
-
------ version 1.10.1-1 -----
-Initial release for Cygwin.
+----- version 1.14.11-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:

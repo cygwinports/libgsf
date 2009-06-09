@@ -13,3 +13,5 @@ libgsf_CONTENTS='etc/ usr/bin/*.exe usr/share/doc usr/share/locale usr/share/man
 libgsf1_114_CONTENTS='usr/bin/*-1-114.dll'
 libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 python_gsf_CONTENTS="${PYTHON_SITELIB#/}"
+
+CYGCONF_ARGS="--with-gio"

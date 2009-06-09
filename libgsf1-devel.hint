@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgsf1_114 libbonobo2-devel libbz2-devel libglib2.0-devel libgnomevfs2-devel gettext libORBit2-devel libxml2-devel zlib-devel
+requires: cygwin libgsf1_114 libbonobo2-devel libbz2-devel libglib2.0-devel gettext libORBit2-devel libxml2-devel zlib-devel
 external-source: libgsf
 sdesc: "Gnome Structured File Library (development)"
 ldesc: "The project aims to provide an efficient extensible i/o 

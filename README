@@ -4,12 +4,11 @@ The project aims to provide an efficient extensible i/o abstraction
 for dealing with different structured file formats.
 
 Runtime requirements:
-  cygwin-1.7.0-45
+  cygwin-1.7.0-48
   libbonobo2_0-2.24.1-1
   libbz2_1-1.0.5-10
   libgcc1-4.3.2-2
-  libglib2.0_0-2.20.1-1
-  libgnomevfs2_0-2.26.0-1
+  libglib2.0_0-2.20.3-1
   libintl8-0.17-10
   libORBit2_0-2.14.17-1
   libxml2-2.7.3-10
@@ -22,7 +21,7 @@ Runtime requirements:
 Build requirements:
 (besides corresponding -devel packages)
   autoconf2.5-2.63-10
-  automake1.10-1.10.1-10
+  automake1.10-1.10.2-10
   binutils-20080624-2
   cygport-0.9.6-1
   gawk-3.1.6-2
@@ -42,18 +41,18 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libgsf-1.14.12-X-src.tar.bz2
+  unpack libgsf-1.14.14-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libgsf-1.14.12-X.cygport all
+  cygport ./libgsf-1.14.14-X.cygport all
 
 This will create:
-  /usr/src/libgsf-1.14.12-X-src.tar.bz2
-  /usr/src/libgsf-1.14.12-X.tar.bz2
-  /usr/src/libgsf1_114-1.14.12-X.tar.bz2
-  /usr/src/libgsf1-devel-1.14.12-X.tar.bz2
-  /usr/src/python-gsf-1.14.12-X.tar.bz2
+  /usr/src/libgsf-1.14.14-X-src.tar.bz2
+  /usr/src/libgsf-1.14.14-X.tar.bz2
+  /usr/src/libgsf1_114-1.14.14-X.tar.bz2
+  /usr/src/libgsf1-devel-1.14.14-X.tar.bz2
+  /usr/src/python-gsf-1.14.14-X.tar.bz2
 
 -------------------------------------------
 
@@ -201,6 +200,9 @@ Files included in the binary packages:
 --------------------
 
 Port Notes:
+
+----- version 1.14.14-1 -----
+Version bump.
 
 ----- version 1.14.12-1 -----
 Version bump.

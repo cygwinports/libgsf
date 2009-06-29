@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin GConf2 libgcc1 libglib2.0_0 libgsf1_114 libintl8
+requires: GConf2 libgcc1 libglib2.0_0 libgsf1_114 libintl8
 sdesc: "Gnome Structured File Library (apps, data)"
 ldesc: "The project aims to provide an efficient extensible i/o 
 abstraction for dealing with different structured file formats."

@@ -3,6 +3,7 @@ inherit pygtk gnome2
 DESCRIPTION="GNOME Structured File library"
 
 PATCH_URI="
+	1.14.16-cygwin-not-win32.patch
 	1.14.16-python-no-undefined.patch
 	1.14.9-gtk-doc.patch
 	1.14.10-schemas-install.patch
@@ -15,4 +16,4 @@ libgsf1_114_CONTENTS='usr/bin/*-1-114.dll'
 libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 python_gsf_CONTENTS="${PYTHON_SITELIB#/}"
 
-CYGCONF_ARGS="--with-gio"
+CYGCONF_ARGS="--with-gio --without-bonobo"

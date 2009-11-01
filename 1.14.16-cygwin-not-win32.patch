@@ -1,0 +1,50 @@
+--- origsrc/libgsf-1.14.16/Makefile.am	2009-05-26 21:01:01.000000000 -0500
++++ src/libgsf-1.14.16/Makefile.am	2009-10-31 23:02:34.034891700 -0500
+@@ -6,7 +6,7 @@ pkgconfig_DATA = libgsf-1.pc
+ if WITH_LIBGSF_GNOME
+   pkgconfig_DATA += libgsf-gnome-1.pc
+ endif
+-if WITH_WIN32
++if WITH_NATIVE_WIN32
+   pkgconfig_DATA += libgsf-win32-1.pc
+ endif
+ 
+--- origsrc/libgsf-1.14.16/configure.in	2009-09-25 18:19:36.000000000 -0500
++++ src/libgsf-1.14.16/configure.in	2009-10-31 23:02:09.542849000 -0500
+@@ -216,14 +216,24 @@ with_win32=no
+ case $host_os in
+   mingw* | pw32* | cygwin*)
+     with_win32=yes
++    ;;
++esac
++AC_MSG_RESULT($with_win32)
++AM_CONDITIONAL(WITH_WIN32, test $with_win32 = yes)
++
++AC_MSG_CHECKING([for native Win32 platform])
++with_native_win32=no
++case $host_os in
++  mingw* | pw32*)
++    with_native_win32=yes
+     AC_ARG_VAR(WINDRES, [The windres executable (used by win32 builds only).])
+     AC_CHECK_TOOL(WINDRES, windres)
+     AC_ARG_VAR(LIBEXE, [The lib.exe executable (used by win32 builds only).])
+     AC_CHECK_PROG(LIBEXE, lib.exe, yes, no)
+     ;;
+ esac
+-AC_MSG_RESULT($with_win32)
+-AM_CONDITIONAL(WITH_WIN32, test $with_win32 = yes)
++AC_MSG_RESULT($with_native_win32)
++AM_CONDITIONAL(WITH_NATIVE_WIN32, test $with_native_win32 = yes)
+ AM_CONDITIONAL(HAVE_LIBEXE, test x$LIBEXE = xyes)
+ AM_CONDITIONAL(CROSS_COMPILING, test x"$cross_compiling" != "xno")
+ 
+--- origsrc/libgsf-1.14.16/gsf-win32/Makefile.am	2009-05-18 20:55:48.000000000 -0500
++++ src/libgsf-1.14.16/gsf-win32/Makefile.am	2009-10-31 23:03:00.461337800 -0500
+@@ -1,6 +1,6 @@
+ AM_CPPFLAGS = -I$(top_srcdir) $(LIBGSF_CFLAGS)
+ 
+-if WITH_WIN32
++if WITH_NATIVE_WIN32
+ 
+ lib_LTLIBRARIES = libgsf-win32-1.la
+ 

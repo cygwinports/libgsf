@@ -5,12 +5,11 @@ for dealing with different structured file formats.
 
 Runtime requirements:
   cygwin-1.7.0-62
-  libbonobo2_0-2.24.2-1
   libbz2_1-1.0.5-10
   libgcc1-4.3.4-1
+  libgdk_pixbuf2.0_0-2.18.3-1
   libglib2.0_0-2.22.2-1
   libintl8-0.17-11
-  libORBit2_0-2.14.17-1
   libxml2-2.7.4-1
   zlib0-1.2.3-10
 (python-gsf)
@@ -59,6 +58,7 @@ Port Notes:
 
 ----- version 1.14.16-1 -----
 Version bump.
+Removed support for deprecated GNOME libraries.
 
 ----- version 1.14.15-1 -----
 Version bump.

@@ -5,7 +5,7 @@ DESCRIPTION="GNOME Structured File library"
 PATCH_URI="
 	1.14.16-cygwin-not-win32.patch
 	1.14.16-python-no-undefined.patch
-	1.14.20-gtk-doc.patch
+	1.14.21-gtk-doc.patch
 	1.14.10-schemas-install.patch
 "
 

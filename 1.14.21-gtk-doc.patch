@@ -1,0 +1,11 @@
+--- origsrc/libgsf-1.14.21/doc/Makefile.am	2009-05-18 20:55:48.000000000 -0500
++++ src/libgsf-1.14.21/doc/Makefile.am	2011-05-24 16:34:11.213761500 -0500
+@@ -34,7 +34,7 @@ IGNORE_HFILES=			 \
+ 	gsf-output-transaction.h \
+ 	gsf-infile-ar.h
+ 
+-EXTRA_HFILES = ../gsf-gnome/*.h
++EXTRA_HFILES = $(top_srcdir)/gsf-gnome/*.h
+ 
+ # Images to copy into HTML directory
+ HTML_IMAGES =

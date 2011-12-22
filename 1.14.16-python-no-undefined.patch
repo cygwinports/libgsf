@@ -15,15 +15,6 @@
  CPPFLAGS="$CPPFLAGS $PYTHON_INCLUDES"
 --- origsrc/libgsf-1.14.8/python/Makefile.am	2006-12-31 20:41:29.000000000 -0600
 +++ src/libgsf-1.14.8/python/Makefile.am	2008-03-08 22:57:10.265625000 -0600
-@@ -23,7 +23,7 @@
- gnomemodule_la_LIBADD = \
- 	$(top_builddir)/gsf-gnome/libgsf-gnome-1.la	\
- 	$(top_builddir)/gsf/libgsf-1.la			\
--	$(LIBGSF_LIBS) $(LIBGSF_GNOME_LIBS)
-+	$(LIBGSF_LIBS) $(LIBGSF_GNOME_LIBS) $(PYTHON_LIBS)
- gnomemodule_la_SOURCES = gsfgnomemodule.c
- nodist_gnomemodule_la_SOURCES = gsfgnome.c
- CLEANFILES += gsfgnome.c
 @@ -33,7 +33,7 @@
  	-I$(top_srcdir)		\
  	$(LIBGSF_CFLAGS)

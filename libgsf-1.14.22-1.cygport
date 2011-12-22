@@ -5,14 +5,12 @@ DESCRIPTION="GNOME Structured File library"
 PATCH_URI="
 	1.14.16-cygwin-not-win32.patch
 	1.14.16-python-no-undefined.patch
-	1.14.21-gtk-doc.patch
-	1.14.10-schemas-install.patch
 "
 
 PKG_NAMES="${PN} ${PN}1_114 ${PN}1-devel python-gsf"
-libgsf_CONTENTS='etc/ usr/bin/*.exe usr/share/doc usr/share/locale usr/share/man/'
+libgsf_CONTENTS='--exclude=gtk-doc usr/bin/*.exe usr/share/'
 libgsf1_114_CONTENTS='usr/bin/*-1-114.dll'
 libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 python_gsf_CONTENTS="${PYTHON_SITELIB#/}"
 
-CYGCONF_ARGS="--with-gio --without-bonobo"
+CYGCONF_ARGS="--with-gio"

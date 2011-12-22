@@ -1,9 +1,9 @@
 --- origsrc/libgsf-1.14.16/Makefile.am	2009-05-26 21:01:01.000000000 -0500
 +++ src/libgsf-1.14.16/Makefile.am	2009-10-31 23:02:34.034891700 -0500
 @@ -6,7 +6,7 @@ pkgconfig_DATA = libgsf-1.pc
- if WITH_LIBGSF_GNOME
-   pkgconfig_DATA += libgsf-gnome-1.pc
- endif
+ pkgconfigdir = $(libdir)/pkgconfig
+ pkgconfig_DATA = libgsf-1.pc
+ 
 -if WITH_WIN32
 +if WITH_NATIVE_WIN32
    pkgconfig_DATA += libgsf-win32-1.pc

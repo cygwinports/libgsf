@@ -1,0 +1,13 @@
+inherit gnome2
+
+DESCRIPTION="GNOME Structured File library"
+
+PATCH_URI="1.14.16-cygwin-not-win32.patch"
+
+PKG_NAMES="${PN} ${PN}1_114 ${PN}1-devel girepository-Gsf1"
+libgsf_CONTENTS='--exclude=gir-1.0 --exclude=gtk-doc usr/bin/*.exe usr/share/'
+libgsf1_114_CONTENTS='usr/bin/*-1-114.dll'
+libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+girepository_Gsf1_CONTENTS="usr/*/gir*/Gsf-1.*"
+
+CYGCONF_ARGS="--with-gio"

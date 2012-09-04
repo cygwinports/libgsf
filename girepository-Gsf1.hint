@@ -1,6 +1,0 @@
-category: Gnome
-requires: libgsf1_114 girepository-GLib2.0 girepository-x11
-external-source: libgsf
-sdesc: "Gnome Structured File Library (GObject Introspection)"
-ldesc: "The project aims to provide an efficient extensible i/o 
-abstraction for dealing with different structured file formats."

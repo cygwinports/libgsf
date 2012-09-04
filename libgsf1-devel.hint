@@ -1,6 +1,0 @@
-category: Gnome
-requires: libgsf1_114 libbz2-devel libglib2.0-devel gettext libxml2-devel zlib-devel
-external-source: libgsf
-sdesc: "Gnome Structured File Library (development)"
-ldesc: "The project aims to provide an efficient extensible i/o 
-abstraction for dealing with different structured file formats."

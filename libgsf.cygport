@@ -1,6 +1,9 @@
 inherit gnome2
 
-CATEGORY="Gnome"
+NAME="libgsf"
+VERSION=1.14.25
+RELEASE=1
+CATEGORY="GNOME"
 SUMMARY="GNOME Structured File library"
 DESCRIPTION="The project aims to provide an efficient extensible I/O
 abstraction for dealing with different structured file formats."
@@ -16,4 +19,3 @@ girepository_Gsf1_CONTENTS="usr/*/gir*/Gsf-1.*"
 
 CYGCONF_ARGS="--with-gio --enable-introspection"
 
-KEEP_LA_FILES="none"

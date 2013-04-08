@@ -9,8 +9,8 @@
    pkgconfig_DATA += libgsf-win32-1.pc
  endif
  
---- origsrc/libgsf-1.14.16/configure.in	2009-09-25 18:19:36.000000000 -0500
-+++ src/libgsf-1.14.16/configure.in	2009-10-31 23:02:09.542849000 -0500
+--- origsrc/libgsf-1.14.16/configure.ac	2009-09-25 18:19:36.000000000 -0500
++++ src/libgsf-1.14.16/configure.ac	2009-10-31 23:02:09.542849000 -0500
 @@ -216,14 +216,24 @@ with_win32=no
  case $host_os in
    mingw* | pw32* | cygwin*)

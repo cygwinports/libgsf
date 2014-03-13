@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgsf"
-VERSION=1.14.28
+VERSION=1.14.29
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Structured File library"
@@ -11,13 +11,15 @@ abstraction for dealing with different structured file formats."
 PATCH_URI="1.14.16-cygwin-not-win32.patch
            1.14.24-export-symbols.patch"
 
-PKG_NAMES="${PN} ${PN}1_114 ${PN}1-devel girepository-Gsf1"
+PKG_NAMES="${NAME} ${NAME}1_114 ${NAME}1-devel ${NAME}1-doc girepository-Gsf1"
 libgsf_CATEGORY="GNOME"
 libgsf_SUMMARY="${SUMMARY% *} utilities"
 libgsf_CONTENTS='--exclude=gir-1.0 --exclude=gtk-doc usr/bin/*.exe usr/share/'
 libgsf1_114_CONTENTS='usr/bin/*-1-114.dll'
-libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
+libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/'
+libgsf1_doc_CATEGORY="Doc"
+libgsf1_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_Gsf1_CONTENTS="usr/*/gir*/Gsf-1.*"
 
-CYGCONF_ARGS="--with-gio --enable-introspection"
+CYGCONF_ARGS="--enable-introspection"
 

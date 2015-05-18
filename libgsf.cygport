@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgsf"
-VERSION=1.14.32
+VERSION=1.14.33
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Structured File library"

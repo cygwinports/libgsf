@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgsf"
-VERSION=1.14.33
+VERSION=1.14.34
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Structured File library"
@@ -16,6 +16,7 @@ libgsf_CATEGORY="GNOME"
 libgsf_SUMMARY="${SUMMARY% *} utilities"
 libgsf_CONTENTS='--exclude=gir-1.0 --exclude=gtk-doc usr/bin/*.exe usr/share/'
 libgsf1_114_CONTENTS='usr/bin/*-1-114.dll'
+libgsf1_devel_REQUIRES="girepository-Gsf1"
 libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/'
 libgsf1_doc_CATEGORY="Doc"
 libgsf1_doc_CONTENTS="usr/share/gtk-doc/"

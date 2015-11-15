@@ -1,0 +1,11 @@
+--- origsrc/libgsf-1.14.34/configure.ac	2015-11-15 01:14:53.266352400 -0600
++++ src/libgsf-1.14.34/configure.ac	2015-11-15 01:21:53.937311000 -0600
+@@ -444,7 +444,7 @@ if test "x$test_bz2" = xtrue ; then
+ 	  #undef VERSION
+ 	  #undef HAVE_STDLIB_H
+ 	  #include <bzlib.h>
+-          main ()
++          int main (void)
+           {
+             return BZ2_bzDecompressInit (NULL, 0, 0);
+           }

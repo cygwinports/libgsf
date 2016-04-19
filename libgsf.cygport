@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="libgsf"
-VERSION=1.14.34
+VERSION=1.14.36
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Structured File library"
@@ -14,16 +14,34 @@ PATCH_URI="
 	1.14.34-configure-bz2.patch
 "
 
-PKG_NAMES="${NAME} ${NAME}1_114 ${NAME}1-devel ${NAME}1-doc girepository-Gsf1"
+PKG_NAMES="${NAME} ${NAME}-common ${NAME}1_114 ${NAME}1-devel ${NAME}1-doc
+	   girepository-Gsf1 gsf-office-thumbnailer"
 libgsf_CATEGORY="GNOME"
 libgsf_SUMMARY="${SUMMARY% *} utilities"
-libgsf_CONTENTS='--exclude=gir-1.0 --exclude=gtk-doc usr/bin/*.exe usr/share/'
+libgsf_CONTENTS="
+	usr/bin/gsf-vba-dump.exe
+	usr/bin/gsf.exe
+	usr/share/man/man1/gsf-vba-dump.1.gz
+	usr/share/man/man1/gsf.1.gz
+"
+libgsf_common_CONTENTS="
+	usr/share/doc/libgsf/
+	usr/share/locale/*/LC_MESSAGES/libgsf.mo
+"
+libgsf1_114_REQUIRES="libgsf-common"
 libgsf1_114_CONTENTS='usr/bin/*-1-114.dll'
 libgsf1_devel_REQUIRES="girepository-Gsf1"
 libgsf1_devel_CONTENTS='usr/include usr/lib/lib* usr/lib/pkgconfig/'
 libgsf1_doc_CATEGORY="Doc"
 libgsf1_doc_CONTENTS="usr/share/gtk-doc/"
 girepository_Gsf1_CONTENTS="usr/*/gir*/Gsf-1.*"
+gsf_office_thumbnailer_CATEGORY="GNOME MATE"
+gsf_office_thumbnailer_SUMMARY="Office document thumbnailer for Nautilus and Caja"
+gsf_office_thumbnailer_CONTENTS="
+	usr/bin/gsf-office-thumbnailer.exe
+	usr/share/man/man1/gsf-office-thumbnailer.1.gz
+	usr/share/thumbnailers/gsf-office.thumbnailer
+"
 
 CYGCONF_ARGS="--enable-introspection"
 
